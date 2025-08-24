@@ -1,0 +1,162 @@
+<nav class="navbar bg-white py-3 py-lg-4 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex me-auto">
+      <a class="navbar-brand" href="index.html"
+        ><img src="../assets/images/header/LOGO.png" alt="logo"
+      /></a>
+      <form class="position-relative ms-lg-5 w-400 d-none d-lg-block">
+        <span
+          class="material-symbols-outlined text-neutral-60 align-bottom position-absolute top-50 start-0 translate-middle-y ps-3"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control ps-8"
+          id="moblie-search"
+          placeholder="搜尋景點、地點或城市"
+        />
+      </form>
+    </div>
+    <!-- 手機版按搜尋會出現的搜尋寬 -->
+    <div class="position-absolute z-1 bg-white start-0 end-0 px-3">
+      <div class="collapse" id="btn-mobile-search">
+        <div class="d-flex algin-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-symbols-outlined text-neutral-60 align-bottom position-absolute top-50 start-0 translate-middle-y ps-3"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control ps-8"
+              id="moblie-search"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button type="button" class="btn border-0">
+            <span
+              class="material-symbols-outlined text-neutral-80"
+              data-bs-toggle="collapse"
+              data-bs-target="#btn-mobile-search"
+            >
+              close
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 搜尋 -->
+    <button
+      type="button"
+      class="btn border-0 p-2 h-40 d-lg-none"
+      data-bs-toggle="collapse"
+      data-bs-target="#btn-mobile-search"
+      aria-expanded="false"
+    >
+      <span class="material-symbols-outlined text-neutral-80 align-bottom">
+        search
+      </span>
+    </button>
+
+    <!-- 購物車 -->
+    <a href="#" class="btn border-0 py-2 px-3 h-40">
+      <span class="position-relative">
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-circle cart-tag p-0 bg-alert"
+        >
+          2</span
+        >
+        <span class="material-symbols-outlined text-neutral-80 align-bottom">
+          shopping_cart
+        </span>
+      </span>
+    </a>
+    <!-- 登入 -->
+    <a
+      href="about.html"
+      type="button"
+      class="btn btn-primary px-7 ms-4 d-none d-lg-block"
+    >
+      登入/註冊
+    </a>
+    <!-- 漢堡選單按鈕 -->
+    <button
+      class="navbar-toggler border-0 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="material-symbols-outlined align-bottom text-neutral-80">
+        menu
+      </span>
+    </button>
+    <!-- 選單內容 -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      style="width: 88%"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close p-6"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-6">
+        <div class="pb-4 border-bottom border-neutral-40">
+          <div class="d-flex algin-items-center">
+            <div class="my-auto">
+              <img
+                src="../assets/images/user/avatar-1.png"
+                alt="usericon"
+                style="width: 32px; height: 32px"
+                class="me-2"
+              />
+            </div>
+
+            <a href="about.html">
+              <h5 class="fs-8 fw-bold text-primary">Jessica</h5>
+              <p class="fs-8 text-neutral-80">jessica.yen@gamil.com</p>
+            </a>
+          </div>
+        </div>
+        <ul class="list-unstyled mt-4">
+          <li class="text-neutral-80 py-3 fs-9">
+            <a href="#"
+              ><span
+                class="material-symbols-outlined text-neutral-80 me-2 align-bottom"
+              >
+                article </span
+              >訂單管理</a
+            >
+          </li>
+          <li class="text-neutral-80 py-3 fs-9">
+            <a href="#"
+              ><span
+                class="material-symbols-outlined text-neutral-80 me-2 align-bottom"
+              >
+                favorite </span
+              >我的收藏</a
+            >
+          </li>
+          <li class="text-neutral-80 py-3 fs-9">
+            <a href="#"
+              ><span
+                class="material-symbols-outlined text-neutral-80 me-2 align-bottom"
+                >settings </span
+              >帳號設定</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
